@@ -125,7 +125,7 @@ class ConfigWindow(QDialog):
             self, self.conf.addon_dir, self.conf._config  # type: ignore
         )
         diag.finished.connect(on_finish)
-        diag.open()
+        diag.show()
         return diag
 
     def closeEvent(self, evt: QCloseEvent) -> None:
